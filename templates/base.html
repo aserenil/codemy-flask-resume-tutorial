@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <a href="{{ url_for('index') }}">Homepage</a> | <a href="{{ url_for('about') }}">About Me</a>
+    <br/><br/>
+    <div id="content">{% block content %}{% endblock %}</div>
+    <div id="footer">
+         {% block footer %}
+        <p style="text-align: center">Copyright (c) Hector Anthony Serenil - All Rights Reserved</p>
+        {% endblock %}
+    </div>
+    <br/><br/>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+
+{% block content %}
+<head>
+    <meta charset="utf-8">
+    <title>codemy flask resume tutorial - index</title>
+</head>
+<style>
+    p {text-align: center}
+</style>
+<body>
+    <div style="text-align: center">Hello {{first_name}}
+        <br/><br/>
+        <ul style="list-style-position: inside">
+        {% for topping in favorite_pizza %}
+            <li>{{topping}}</li>
+        {% endfor %}
+        </ul>
+    </div>
+</body>
+
+{% endblock %}
+</html>
